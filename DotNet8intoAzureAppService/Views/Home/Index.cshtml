@@ -1,0 +1,312 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of Thrissur - Kerala's Cultural Culinary Journey</title>
+  @*   <link rel="stylesheet" href="style.css"> *@
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header with Traditional Welcome -->
+    <header class="hero-section">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="traditional-welcome">
+                    <p class="sanskrit-greeting">आतिथि देवो भवः</p>
+                    <p class="greeting-translation">Atithi Devo Bhava - The Guest is God</p>
+                </div>
+                <h1 class="hero-title">Taste of Thrissur</h1>
+                <p class="hero-subtitle">നമസ്കാരം - Experience Kerala's Cultural Capital Through Authentic Flavors</p>
+                <p class="hero-description">Where 3000 years of spice trade heritage meets traditional Malayali hospitality</p>
+                <button class="btn btn--primary hero-cta" onclick="scrollToSection('cultural-welcome')">Begin Your Cultural Journey</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755090441/pplx_project_search_images/bec27ccb9d9a6c9262c79280631d8d5e6fe1ccfc.png" alt="Traditional Kerala Lamp" class="nav-logo-img">
+                    <span class="nav-logo-text">Taste of Thrissur</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#cultural-welcome">Heritage</a></li>
+                    <li><a href="#menu-section">Menu</a></li>
+                    <li><a href="#traditions">Traditions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('about')">About Us</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('cultural-heritage')">Cultural Heritage</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('catering')">Catering</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Cultural Welcome Section -->
+        <section id="cultural-welcome" class="cultural-section">
+            <div class="container">
+                <div class="cultural-intro">
+                    <div class="cultural-text">
+                        <h2 class="section-title">Welcome to Kerala's Cultural Capital</h2>
+                        <p class="cultural-description">
+                            Thrissur, the beating heart of Kerala's cultural heritage, welcomes you with the ancient tradition of
+                            <strong>Atithi Devo Bhava</strong> - treating every guest as divine. Step into our world where coconut palms whisper
+                            ancient stories, where the aroma of cardamom and pepper tells tales of spice merchants from distant lands.
+                        </p>
+                        <div class="welcome-traditions">
+                            <div class="tradition-item">
+                                <h4>Traditional Welcome</h4>
+                                <p>Fresh coconut water and warm <em>Namaste</em> greetings</p>
+                            </div>
+                            <div class="tradition-item">
+                                <h4>Banana Leaf Dining</h4>
+                                <p>Eco-friendly service that enhances flavors naturally</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cultural-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755090444/pplx_project_search_images/ab6ba7deea68ce9d3747e9cfcc2e4d3d72d345b2.png" alt="Kerala Backwaters" class="section-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spice Trade Heritage -->
+        <section class="spice-heritage">
+            <div class="container">
+                <h2 class="section-title">3000 Years of Spice Trade Legacy</h2>
+                <div class="heritage-grid">
+                    <div class="heritage-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755090441/pplx_project_search_images/9a3cf5ed5a755a9d0733c091cfd6a1346970bbad.png" alt="Traditional Kerala Cooking" class="heritage-img">
+                        <h3>Ancient Cooking Methods</h3>
+                        <p>Clay pots, coconut oil, and traditional spice blending techniques passed down through generations</p>
+                    </div>
+                    <div class="heritage-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755090441/pplx_project_search_images/33266e7fd12a46d539ee5ee5ed974cdd7c511ca8.png" alt="Traditional Kerala Brass Lamps" class="heritage-img">
+                        <h3>Brass Heritage</h3>
+                        <p>Handcrafted Nilavilakku lamps and traditional vessels symbolizing prosperity and welcome</p>
+                    </div>
+                    <div class="heritage-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755090441/pplx_project_search_images/bdc26241c2da8eca017cd62f0e17c025ad791e45.png" alt="Kerala Traditional Pot Curry" class="heritage-img">
+                        <h3>Authentic Flavors</h3>
+                        <p>Traditional earthenware cooking preserves the authentic taste that made Kerala famous worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Traditional Art Forms -->
+        <section class="art-forms">
+            <div class="container">
+                <h2 class="section-title">Cultural Expressions of Thrissur</h2>
+                <div class="art-showcase">
+                    <div class="art-content">
+                        <div class="art-item">
+                            <h4>Kathakali</h4>
+                            <p>Classical dance-drama expressing Kerala's rich storytelling tradition</p>
+                        </div>
+                        <div class="art-item">
+                            <h4>Thrissur Pooram</h4>
+                            <p>The Mother of all Festivals - celebrating community, culture, and cuisine</p>
+                        </div>
+                        <div class="art-item">
+                            <h4>Mohiniyattam</h4>
+                            <p>The dance of the enchantress, graceful as Kerala's swaying palms</p>
+                        </div>
+                    </div>
+                    <div class="art-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755090423/pplx_project_search_images/08bd50025bd47078b0e19ffec10ed9d49b01a8e5.png" alt="Thrissur Cultural Heritage" class="section-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section with Cultural Context -->
+        <section id="menu-section" class="menu-section">
+            <div class="container">
+                <h2 class="section-title">Our Cultural Culinary Journey</h2>
+                <p class="menu-intro">Each dish tells a story of Kerala's rich heritage, prepared with love and served with traditional hospitality</p>
+
+                <div class="menu-categories">
+                    <div class="menu-category">
+                        <h3>Traditional Sadya - Festival Feast</h3>
+                        <p class="category-description">Complete vegetarian banquet representing prosperity and abundance, served on banana leaf</p>
+                        <div class="menu-image-wrapper">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1755090423/pplx_project_search_images/0db1859fded31bf6baa3fcf986a7a16e6a6b43d2.png" alt="Traditional Kerala Onam Sadya" class="menu-img">
+                        </div>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <h4>Complete Onam Sadya</h4>
+                                <p>24+ traditional dishes including sambar, rasam, avial, and payasam</p>
+                                <span class="cultural-note">Cultural Note: Served during Onam festival symbolizing prosperity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <h3>Malabar Coast Specialties</h3>
+                        <p class="category-description">Fresh seafood and coconut-based curries from Kerala's historic spice ports</p>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <h4>Karimeen Pollichathu</h4>
+                                <p>Pearl spot fish wrapped in banana leaf with spices</p>
+                                <span class="cultural-note">From the backwaters of Kerala</span>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Malabar Fish Curry</h4>
+                                <p>Coconut-based curry with kokum and curry leaves</p>
+                                <span class="cultural-note">Recipe from spice trading heritage</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <h3>Spice Route Heritage</h3>
+                        <p class="category-description">Dishes showcasing the spices that brought the world to Kerala's shores</p>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <h4>Appam with Stew</h4>
+                                <p>Lacy rice pancakes with coconut milk stew</p>
+                                <span class="cultural-note">Influenced by Syrian Christian traditions</span>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Puttu & Kadala</h4>
+                                <p>Steamed rice flour with spiced chickpeas</p>
+                                <span class="cultural-note">Traditional breakfast celebrating coconut</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-cta">
+                    <button class="btn btn--primary" onclick="showPage('menu-categories')">Explore Full Menu</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Traditional Hospitality -->
+        <section id="traditions" class="hospitality-section">
+            <div class="container">
+                <h2 class="section-title">Kerala Hospitality Traditions</h2>
+                <div class="hospitality-grid">
+                    <div class="hospitality-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755090423/pplx_project_search_images/fbef18b182aa1b31619289eb717a87ce899dad93.png" alt="Kerala Traditional Hospitality" class="hospitality-img">
+                        <h4>Warm Welcome Ritual</h4>
+                        <p>Traditional coconut water welcome, jasmine garlands, and heartfelt Namaste greetings</p>
+                    </div>
+                    <div class="hospitality-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1754881926/pplx_project_search_images/b687044ee10ba6b927ce1431707c8462fee1f2af.png" alt="Kerala Restaurant Interior" class="hospitality-img">
+                        <h4>Traditional Ambiance</h4>
+                        <p>Wooden furniture, brass artifacts, and hanging plants creating an authentic Kerala atmosphere</p>
+                    </div>
+                    <div class="hospitality-card">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755090442/pplx_project_search_images/456c91ac0d1ca12c9399788237b4914f65a28350.png" alt="Traditional Kerala Brass Art" class="hospitality-img">
+                        <h4>Cultural Artifacts</h4>
+                        <p>Handcrafted brass items and traditional art pieces showcasing Kerala's rich cultural heritage</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Visit Our Cultural Haven</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h4>Location</h4>
+                            <p>MG Road, Thrissur<br>Kerala 680001, India</p>
+                            <p class="cultural-note">Near Vadakkunnathan Temple - Heart of Cultural Thrissur</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Contact</h4>
+                            <p>📞 +91 98765 43210<br>✉️ namaste@tasteofthrissur.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Experience Hours</h4>
+                            <p>Daily: 11:00 AM - 10:00 PM<br>Special Sadya: Weekends & Festivals</p>
+                        </div>
+                    </div>
+                    <div class="contact-cta">
+                        <button class="btn btn--primary" onclick="showPage('contact')">Plan Your Visit</button>
+                        <button class="btn btn--secondary" onclick="showPage('catering')">Cultural Events & Catering</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Additional Pages (Hidden by default) -->
+    <div id="about-page" class="page-content hidden">
+        <div class="container">
+            <h1>Our Heritage Story</h1>
+            <p>Discover the deep cultural roots and traditions that make Taste of Thrissur a authentic Kerala experience...</p>
+            <button class="btn btn--secondary" onclick="showPage('home')">Back to Home</button>
+        </div>
+    </div>
+
+    <div id="cultural-heritage-page" class="page-content hidden">
+        <div class="container">
+            <h1>Thrissur's Cultural Legacy</h1>
+            <p>Explore the rich history, festivals, and traditions of Kerala's cultural capital...</p>
+            <button class="btn btn--secondary" onclick="showPage('home')">Back to Home</button>
+        </div>
+    </div>
+
+    <div id="menu-categories-page" class="page-content hidden">
+        <div class="container">
+            <h1>Complete Menu Experience</h1>
+            <p>Browse our full collection of traditional Kerala dishes with cultural stories...</p>
+            <button class="btn btn--secondary" onclick="showPage('home')">Back to Home</button>
+        </div>
+    </div>
+
+    <div id="contact-page" class="page-content hidden">
+        <div class="container">
+            <h1>Visit Our Cultural Haven</h1>
+            <p>Plan your authentic Kerala dining experience with us...</p>
+            <button class="btn btn--secondary" onclick="showPage('home')">Back to Home</button>
+        </div>
+    </div>
+
+    <div id="catering-page" class="page-content hidden">
+        <div class="container">
+            <h1>Cultural Events & Catering</h1>
+            <p>Bring authentic Kerala hospitality to your special occasions...</p>
+            <button class="btn btn--secondary" onclick="showPage('home')">Back to Home</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Taste of Thrissur</h4>
+                    <p>Celebrating Kerala's culinary legacy with authentic flavors and traditional hospitality</p>
+                    <p class="sanskrit-text">सर्वे भवन्तु सुखिनः - May all be happy</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Cultural Elements</h4>
+                    <p>Traditional Cooking • Banana Leaf Service • Spice Heritage • Cultural Hospitality</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Taste of Thrissur | Preserving Kerala's Cultural Culinary Heritage</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/app.js"></script>
+</body>
+</html>
